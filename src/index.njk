@@ -1,0 +1,31 @@
+---
+layout: landing
+root_dir: ./
+title: Home
+---
+
+<p><span class="mr-1">👋</span> Welcome! This is a collection of examples and
+resources for Web Audio API. Handpicked by <strong>Chrome Web Audio team
+</strong>.</p>
+
+{% for section in index.projects %}
+<div class="my-12">
+  <h1 class="mb-6">
+    {{ section.section_title }}
+  </h1>
+  <div class="grid grid-flow-row grid-cols-1 lg:grid-cols-2 gap-4">
+  {% for item in section.items %}
+    <div>
+    {% if item.description %}
+      <h2>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+      </h2>
+      <p>{{ item.description }}</p>
+    {% else %}
+      <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+    {% endif %}
+    </div>
+  {% endfor %}
+  </div>
+</div>
+{% endfor %}

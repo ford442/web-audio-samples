@@ -1,0 +1,27 @@
+---
+layout: base
+---
+
+<div id="header">
+  <div class="p-6 pt-12">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row">
+      <h1 class="text-5xl font-semibold">
+
+        {{ metadata.site_title }}
+
+      </h1>
+    </div>
+  </div>
+</div>
+
+<div id="content">
+  <div class="p-6">
+    <div class="max-w-4xl mx-auto">
+
+      {{ content | safe }}
+    
+    </div>
+  </div>
+</div>
+
+{% include "footer.njk" %}

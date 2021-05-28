@@ -1,0 +1,20 @@
+---
+layout: page
+root_dir: ../
+title: Vintage Demos
+---
+
+<p>A varierty of demos and experiments written in the early days of Web Audio
+  API. Note that these are not actively maintained, so some might not be fully
+  functional. Please feel free to <a href="">file an issue</a> if you find an
+  error.</p>
+
+<div class="my-12">
+  <div class="grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-4">
+  {% for demo in vintageDemos.projects %}
+    <div>
+      <p><a href="{{ demo.path }}">{{ demo.title }}</a></p>
+    </div>
+  {% endfor %}
+  </div>
+</div>

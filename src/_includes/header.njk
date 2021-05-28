@@ -1,0 +1,23 @@
+<div id="header">
+  <div class="p-6 pt-12">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row">
+      <div class="text-base">
+
+        <a href="{{ root_dir }}">
+          {{ metadata.site_title }}
+        </a>
+        <span class="mx-1">&raquo;</span>
+
+        {% for entry in parents %}
+          <a href="{{ entry.path }}">
+            {{ entry.title }}
+          </a>
+          <span class="mx-1">&raquo;</span>
+        {% endfor %}
+
+        <span>{{ title }}</span>
+
+      </div>
+    </div>
+  </div>
+</div>

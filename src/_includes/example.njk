@@ -1,0 +1,13 @@
+---
+layout: page
+---
+
+{{ content | safe }}
+
+{% if github_source %}
+<div class="text-right">
+  <a href="{{ metadata.github_url }}{{ github_source }}" class="text-sm">
+    See sources on GitHub
+  </a>
+</div>
+{% endif %}

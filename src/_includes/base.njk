@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="description" content="{{ metadata.description }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ metadata.icon.apple_touch_icon }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ metadata.icon.favicon_32px }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{'static/favicon-16x16.png'}}">
+  <title>
+    {{ title }} | Chrome Web Audio Samples
+  </title>
+  <link rel="stylesheet" href="{{ root_dir }}site.css">
+</head>
+<body class="font-sans leading-normal tracking-normal text-gray-900">
+  
+  {{ content | safe }}
+
+  {# {% include "header.njk" %}
+
+  <div id="content">
+    <div class="p-6">
+      <div class="max-w-4xl mx-auto">
+
+        {{ content | safe }}
+      
+      </div>
+    </div>
+  </div>
+
+  {% include "footer.njk" %} #}
+
+</body>
+</html>

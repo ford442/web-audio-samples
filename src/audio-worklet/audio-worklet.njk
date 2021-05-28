@@ -1,0 +1,42 @@
+---
+layout: page
+title: Audio Worklet
+root_dir: ../
+---
+
+<p id="worklet-indicator"></p>
+
+<script type="module">
+  import detectAudioWorklet from '../../../js/DetectAudioWorklet.js';
+
+  if (detectAudioWorklet() === false) {
+    const indicator = document.getElementById('worklet-indicator');
+    indicator.innerHTML = `
+        Your browser does <strong>NOT</strong> support AudioWorklet. See
+        <a href="https://caniuse.com/mdn-api_audioworklet">caniuse.com</a> for
+        the compatibility data.
+    `;
+  }
+</script>
+
+{% for section in audioWorklet.examples %}
+<div class="my-6">
+  <h1 class="mb-6" id="{{ section.section_title | slug }}">
+    {{ section.section_title }}
+  </h1>
+  <div class="grid grid-flow-row grid-cols-1 lg:grid-cols-2 gap-4">
+  {% for example in section.examples %}
+    <div>
+    {% if example.description %}
+      <h2>
+        <a href="{{ example.url }}">{{ example.title }}</a>
+      </h2>
+      <p>{{ example.description }}</p>
+    {% else %}
+      <p><a href="{{ example.url }}">{{ example.title }}</a></p>
+    {% endif %}
+    </div>
+  {% endfor %}
+  </div>
+</div>
+{% endfor %}

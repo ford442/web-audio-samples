@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a, a:active, a:visited {
+  @apply text-blue-500;
+}
+
+body {
+  @apply text-lg text-gray-700 leading-7;
+}
+
+a:hover {
+  @apply text-blue-300 no-underline;
+}
+
+p {
+  @apply my-1;
+}
+
+h1 {
+  @apply text-3xl font-bold;
+}
+
+h2 {
+  @apply text-2xl font-semibold;
+}
+
+button {
+  @apply py-2 px-4 rounded-md;
+  @apply bg-blue-400 text-white;
+}
+
+button[disabled],
+button[disabled]:hover,
+button[disabled]:focus {
+  @apply bg-white text-gray-400 border border-gray-200 cursor-not-allowed;
+}
+
+button:hover {
+  @apply bg-blue-500;
+}
+
+#demo-runner {
+  @apply mt-6 p-3 border border-gray-400 rounded-md;
+}

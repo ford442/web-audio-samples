@@ -1,0 +1,97 @@
+[
+  {
+    "section_title": "Tools and Resources",
+    "items": [
+      {
+        "title": "Audio Worklet",
+        "description": "Audio Worklet examples and resources",
+        "url": "audio-worklet/"
+      },
+      {
+        "title": "Omnitone",
+        "description": "360° audio renderer for WebXR applications",
+        "url": "//googlechrome.github.io/omnitone/"
+      },
+      {
+        "title": "Resonance Audio for Web",
+        "description": "SDK for interactive ambisonic soundfield",
+        "url": "//resonance-audio.github.io/resonance-audio/"
+      },
+      {
+        "title": "Web Audio Inspector",
+        "description": "Chrome DevTools extension for Web Audio debugging",
+        "url": "//github.com/GoogleChrome/audion"
+      }
+    ]
+  },
+  {
+    "section_title": "Selected Projects",
+    "items": [
+      {
+        "title": "Tone.js",
+        "description": "Framework for creating interactive music in browser",
+        "url": "//tonejs.github.io/"
+      },
+      {
+        "title": "Chrome Music Lab",
+        "description": "Learning music through web technology",
+        "url": "//musiclab.chromeexperiments.com/"
+      },
+      {
+        "title": "Web Audio Demos",
+        "description": "A demo collection by Chris Wilson",
+        "url": "//webaudiodemos.appspot.com/"
+      },
+      {
+        "title": "Blob Opera",
+        "description": "Create your own opera inspired by machine learning",
+        "url": "//g.co/arts/pnWx1VFCacUP4fmw5"
+      },
+      {
+        "title": "Filter Playground",
+        "description": "Interactive filter design tool by Boris Smus",
+        "url": "//borismus.github.io/filter-playground/"
+      },
+      {
+        "title": "Beautiful Audio Editor",
+        "description": "Multitrack recorder/editor by Chi Zeng",
+        "url": "//beautifulaudioeditor.appspot.com/"
+      },
+      {
+        "title": "Google Doodle: Hiphop",
+        "description": "44th Anniversary of the Birth of Hip Hop",
+        "url": "//www.google.com/doodles/44th-anniversary-of-the-birth-of-hip-hop"
+      },
+      {
+        "title": "Google Doodle: Clara Rockmore",
+        "description": "Clara Rockmore’s 105th Birthday",
+        "url": "//www.google.com/doodles/clara-rockmores-105th-birthday"
+      },
+      {
+        "title": "Google Doodle: Robert Moog",
+        "description": "Robert Moog’s 78th birthday",
+        "url": "//www.google.com/doodles/robert-moogs-78th-birthday"
+      }
+    ]
+  },
+  {
+    "section_title": "Demos",
+    "items": [
+      {
+        "title": "Vintage demo collection",
+        "description": "Various demos from the early days of Web Audio API",
+        "url": "vintage-demos/"
+      },
+      {
+        "title": "Box2D Stress Test",
+        "description": "A stress tester for Chrome Web Audio renderer",
+        "url": "box2d-stress-test/"
+      },
+      {
+        "title": "8 Ball with 3D audio",
+        "description": "An early showcase of WebGL and Web Audio API",
+        "url": "vintage-demos/o3d-webgl-samples/pool.html"
+      }
+    ]
+  }
+]
