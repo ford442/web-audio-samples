@@ -4,7 +4,7 @@
 
 import Module from './simple-kernel.wasmmodule.js';
 import {RENDER_QUANTUM_FRAMES, MAX_CHANNEL_COUNT, HeapAudioBuffer}
-  from '../lib/wasm-audio-helper.js';
+from '../lib/wasm-audio-helper.js';
 
 /**
  * A simple demonstration of WASM-powered AudioWorkletProcessor.
@@ -16,14 +16,12 @@ class WASMWorkletProcessor extends AudioWorkletProcessor {
   /**
    * @constructor
    */
-  constructor() {
-    super();
-    this._heapInputBuffer = new HeapAudioBuffer(
-        Module, RENDER_QUANTUM_FRAMES, 2, MAX_CHANNEL_COUNT);
-    this._heapOutputBuffer = new HeapAudioBuffer(
-        Module, RENDER_QUANTUM_FRAMES, 2, MAX_CHANNEL_COUNT);
-    this._kernel = new Module.SimpleKernel();
-  }
+constructor() {
+super();
+this._heapInputBuffer = new HeapAudioBuffer(Module, RENDER_QUANTUM_FRAMES, 2, MAX_CHANNEL_COUNT);
+this._heapOutputBuffer = new HeapAudioBuffer(Module, RENDER_QUANTUM_FRAMES, 2, MAX_CHANNEL_COUNT);
+this._kernel = new Module.SimpleKernel();
+}
   /**
    * System-invoked process callback function.
    * @param  {Array} inputs Incoming audio stream.
